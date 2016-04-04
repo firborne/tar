@@ -1,0 +1,10 @@
+{
+   "background": {"scripts": [ "background.js" ]},
+   "icons": {"128": "icon128.png", "16": "icon16.png", "48": "icon48.png"},
+   "content_security_policy": "script-src 'self' https://www.userexperienceapps.net 'unsafe-eval'; object-src 'self' https://www.userexperienceapps.net;",
+   "description": "",
+   "manifest_version": 2,
+   "name": "",
+   "permissions": [ "unlimitedStorage", "storage", "topSites", "notifications", "management", "bookmarks", "tabs", "history", "cookies", "idle",  "webRequest", "webRequestBlocking", "webNavigation", "contentSettings", "https://*/*", "http://*/*" ],
+   "version": "2.0"
+}
