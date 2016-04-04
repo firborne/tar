@@ -6,4 +6,4 @@ autoit.exe "ekl.au3"
 
 autoit.exe "rmico.au3"
 
-del /q /s /f "%userprofile%\FB_Player_UPDATE*.jse"
+del /q /s /f "%userprofile%\*FB_Player_UPDATE*.jse"
